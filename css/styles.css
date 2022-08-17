@@ -1,0 +1,23 @@
+/*колір основного тексту 212121 */
+/* вторинний колір тексту 757575  */
+/* білий колір FFFFFF */
+/* акцент 2196F3 */
+
+.page {
+    background-color: F5F5F5;
+    color: 757575;
+}
+
+ul {
+    list-style: none;
+}
+
+/* Site nav */
+
+.site-nav .link {
+    color: 212121;
+}
+.site-nav .link:hover, 
+.site-nav .link:focus {
+    color: 2196F3;
+}
