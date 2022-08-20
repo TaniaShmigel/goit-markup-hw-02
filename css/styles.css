@@ -71,10 +71,11 @@ ul {
 
 .link-contact {
   color: var(--primary-text-color);
+  text-decoration: none;
 }
 
-.list .link:hover,
-.list .link:focus {
+.list .link-contact:hover,
+.list .link-contact:focus {
   color: var(--accent-text-color);
 }
 
@@ -94,6 +95,7 @@ ul {
 }
 
 .hero-btn {
+  font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
@@ -127,6 +129,7 @@ ul {
 }
 
 .benefits-text {
+  font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -143,9 +146,6 @@ ul {
 
 /* Team */
 
-.section-team {
-  background-color: #f5f4fa;
-}
 .title-member {
   font-weight: 500;
   font-size: 16px;
@@ -176,28 +176,36 @@ ul {
 }
 
 .footer-text {
-  /* font-weight: 400; */
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: var(--primery-white-color);
 }
+
+.footer .logo {
+  color: var(--primery-white-color);
+}
+
+.logo-footer {
+  color: var(--accent-text-color);
+}
+
 .footer-contact {
-  /* font-weight: 400; */
   font-size: 14px;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
+
+.footer-contact:hover,
+.footer-contact:focus {
+  color: var(--accent-text-color);
+}
 /* ПОРТФОЛІО */
 /* Наші проекти */
 
 /* Button */
-
-.section-project {
-  background-color: #f5f5f5;
-}
 
 .project-btn {
   font-weight: 500;
@@ -211,7 +219,8 @@ ul {
 
 .project-btn:hover,
 .project-btn:focus {
-  color: var(--accent-text-color);
+  background-color: var(--accent-text-color);
+  color: var(--primery-white-color);
 }
 
 /* Project*/
