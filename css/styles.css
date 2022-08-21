@@ -23,8 +23,7 @@
 
 .page {
   font-family: "Roboto";
-  font-style: normal;
-  font-style: 400;
+  font-weight: 500;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
 }
@@ -99,9 +98,6 @@ ul {
   font-weight: 700;
   font-size: 16px;
   line-height: calc(30 / 16);
-  display: flex;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   color: var(--primery-white-color);
   background-color: var(--accent-text-color);
@@ -145,6 +141,14 @@ ul {
 }
 
 /* Team */
+
+.section-team {
+    background-color: #F5F4FA;
+}
+
+.team-list {
+    background-color: var(--primery-white-color);
+}
 
 .title-member {
   font-weight: 500;
@@ -208,6 +212,7 @@ ul {
 /* Button */
 
 .project-btn {
+  font-family: inherit; 
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
