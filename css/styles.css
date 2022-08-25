@@ -5,24 +5,22 @@
 
 :root {
   /* Fonts */
-  --main-font: Roboto, sana-serif;
-  --secondary-font: Raleway, sana-serif;
+  --main-font: Roboto, sans-serif;
+  --secondary-font: Raleway, sans-serif;
   /* Text color */
   --primary-text-color: #757575;
   --secondary-text-color: #212121;
   --accent-text-color: #2196f3;
   --primery-white-color: #ffffff;
+  /* Background colors */
+  --grey-bg-color: #2f303a;
+  --lightgrey-bg-color: #f5f4fa;
 }
 
-.body {
+body {
   background-color: var(--primery-white-color);
   color: var(--primary-text-color);
   font-family: var(--main-font);
-  letter-spacing: 0.03em;
-}
-
-.page {
-  font-family: "Roboto";
   font-weight: 500;
   line-height: calc(24 / 14);
   letter-spacing: 0.03em;
@@ -50,21 +48,16 @@ ul {
   font-weight: 700;
   font-size: 26px;
   line-height: calc(31 / 26);
-  letter-spacing: 0.03em;
   color: #000000;
   text-decoration: none;
 }
 
-.logo-name {
-  color: var(--accent-text-color);
-}
-
+.logo-name,
+.list .link-contact:hover,
+.list .link-contact:focus,
+.site-nav .link.current,
 .site-nav .link:hover,
 .site-nav .link:focus {
-  color: var(--accent-text-color);
-}
-
-.site-nav .link.current {
   color: var(--accent-text-color);
 }
 
@@ -73,15 +66,10 @@ ul {
   text-decoration: none;
 }
 
-.list .link-contact:hover,
-.list .link-contact:focus {
-  color: var(--accent-text-color);
-}
-
 /* Hero */
 
 .hero {
-  background-color: #2f303a;
+  background-color: var(--grey-bg-color);
 }
 .hero-title {
   font-weight: 900;
@@ -101,25 +89,45 @@ ul {
   letter-spacing: 0.06em;
   color: var(--primery-white-color);
   background-color: var(--accent-text-color);
+  cursor: pointer;
 }
+
+.hero-btn:hover,
+.hero-btn:focus {
+  color: var(--accent-text-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+}
+
 /* Section */
 .section-title {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
 }
 
 /* Benefits */
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 .benefits-title {
   font-weight: 700;
   font-size: 14px;
   line-height: calc(16 / 14);
-  letter-spacing: 0.03em;
   text-transform: uppercase;
   color: var(--secondary-text-color);
 }
@@ -128,7 +136,6 @@ ul {
   font-weight: 400;
   font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
 
@@ -136,18 +143,17 @@ ul {
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42 / 36);
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
 /* Team */
 
 .section-team {
-    background-color: #F5F4FA;
+  background-color: var(--lightgrey-bg-color);
 }
 
-.team-list {
-    background-color: var(--primery-white-color);
+.list-item {
+  background-color: var(--primery-white-color);
 }
 
 .title-member {
@@ -155,7 +161,6 @@ ul {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
   color: var(--secondary-text-color);
 }
 
@@ -164,7 +169,6 @@ ul {
   font-size: 16px;
   line-height: calc(19 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--primary-text-color);
 }
@@ -172,7 +176,7 @@ ul {
 /* Footer */
 
 .footer {
-  background-color: #2f303a;
+  background-color: var(--grey-bg-color);
 }
 
 .contact {
@@ -182,8 +186,8 @@ ul {
 .footer-text {
   font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--primery-white-color);
+  text-decoration: none;
 }
 
 .footer .logo {
@@ -197,7 +201,6 @@ ul {
 .footer-contact {
   font-size: 14px;
   line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
 }
@@ -212,14 +215,14 @@ ul {
 /* Button */
 
 .project-btn {
-  font-family: inherit; 
+  font-family: inherit;
   font-weight: 500;
   font-size: 16px;
   line-height: calc(26 / 16);
   text-align: center;
-  letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+  cursor: pointer;
 }
 
 .project-btn:hover,
@@ -236,11 +239,13 @@ ul {
   line-height: calc(36 / 18);
   letter-spacing: 0.06em;
   color: var(--secondary-text-color);
+  text-decoration: none;
 }
 
 .project-text {
+  font-weight: 400;
   font-size: 16px;
   line-height: calc(30 / 16);
-  letter-spacing: 0.03em;
   color: var(--primary-text-color);
+  text-decoration: none;
 }
